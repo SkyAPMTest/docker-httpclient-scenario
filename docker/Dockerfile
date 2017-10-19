@@ -4,7 +4,6 @@ ENV COLLECTOR_SERVER=127.0.0.1:12800
 
 COPY catalina.sh /usr/local/tomcat/bin/
 ADD httpclient-case /usr/local/tomcat/webapps/httpclient-case
-COPY sky-walking.config /usr/local/tomcat/agent-config/sky-walking.config
 
 ADD docker-entrypoint.sh /
 RUN chmod +x /usr/local/tomcat/bin/catalina.sh && chmod +x /docker-entrypoint.sh
